@@ -40,3 +40,5 @@ A simple offline web app that lets you upload and play local video files with su
 💡 Why I Made This
 Sometimes streaming isn’t possible, like when there’s no Wi-Fi or internet access.
 This tool makes it easy to play and cast your local media files directly from your browser, without needing any external software.
+
+Access The Site: https://jm-l4ude.github.io/Local-Video-Player/
