@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Local Video Player</h1>
+        
+        <div class="upload-section">
+            <div class="button-group">
+                <input type="file" id="videoInput" accept="video/*" class="file-input">
+                <label for="videoInput" class="upload-btn">
+                    <span class="btn-text">Choose Video File</span>
+                </label>
+
+                <input type="file" id="subtitleInput" accept=".srt,.vtt" class="file-input">
+                <label for="subtitleInput" class="upload-btn">
+                    <span class="btn-text">Select Subtitle</span>
+                </label>
+            </div>
+            <p class="file-info" id="videoInfo">No video file selected</p>
+            <p class="file-info" id="subtitleInfo">No subtitle file selected</p>
+        </div>
+
+        <div class="video-container" id="videoContainer" style="display: none;">
+            <video id="videoPlayer" controls crossorigin="anonymous">
+                Your browser does not support the video tag.
+                <track id="subtitleTrack" kind="subtitles" srclang="en" label="English" default>
+            </video>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
